@@ -20,7 +20,7 @@ namespace Php {
  */
 Stream::Stream(php_stream *stream)
 {
-    if (_stream == NULL)
+    if (stream == NULL)
     {
         throw Php::Exception("Could not initialize stream object. The resource is invalid.");
     }
